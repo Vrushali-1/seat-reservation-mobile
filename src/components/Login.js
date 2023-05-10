@@ -16,6 +16,7 @@ const LoginPage = ({ navigation }) => {
         storeData('user',response.data.user);
         const user = await getData('user');
         console.log('yeepieeee',user);
+        navigation.navigate('BusPage');
       }
       else{
         ToastAndroid.show('Login Failed!', ToastAndroid.SHORT);
